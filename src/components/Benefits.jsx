@@ -1,24 +1,6 @@
 import { benefits } from "../constants";
 import Heading from "./Heading";
 import Section from "./Section";
-import { GradientLight } from "./design/Benefits";
-import ClipPath from "../assets/svg/ClipPath";
-
-// Import SVGs directly
-import card1 from '../assets/benefits/card-1.svg';
-import card2 from '../assets/benefits/card-2.svg';
-import card3 from '../assets/benefits/card-3.svg';
-import card5 from '../assets/benefits/card-5.svg';
-import card6 from '../assets/benefits/card-6.svg';
-
-// Map of imported SVGs (assuming you have 6 cards, adjust as needed)
-const cardImages = {
-  'card-1.svg': card1,
-  'card-2.svg': card2,
-  'card-3.svg': card3,
-  'card-5.svg': card5,
-  'card-6.svg': card6,
-};
 
 const Benefits = () => {
   return (
@@ -30,50 +12,60 @@ const Benefits = () => {
         />
 
         <div className="flex flex-wrap gap-10 mb-10">
-          {benefits.map((item) => (
+          {benefits.map((item, index) => (
             <div
-              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
-              style={{
-                backgroundImage: `url(${cardImages[item.backgroundUrl] || item.backgroundUrl})`,
-              }}
+              className={`benefit-card benefit-card-${index} relative md:max-w-[24rem]`}
               key={item.id}
             >
-              <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
+              <div className="card-content relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] bg-n-8 overflow-hidden">
+                <div className="card-decoration"></div>
                 <h5 className="h5 mb-5">{item.title}</h5>
                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
                 <div className="flex items-center mt-auto">
-                  
                   <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
                     At PrimeCoding
                   </p>
-                  
                 </div>
               </div>
-
-              {item.light && <GradientLight />}
-
-              <div
-                className="absolute inset-0.5 bg-n-8"
-                style={{ clipPath: "url(#benefits)" }}
-              >
-                <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
-                  {item.imageUrl && (
-                    <img
-                      src={cardImages[item.imageUrl] || item.imageUrl}
-                      width={380}
-                      height={362}
-                      alt={item.title}
-                      className="w-full h-full object-cover"
-                    />
-                  )}
-                </div>
-              </div>
-
-              <ClipPath />
             </div>
           ))}
         </div>
       </div>
+
+      <style jsx>{`
+        .benefit-card {
+          --card-radius: 2rem;
+          border-radius: var(--card-radius);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-content {
+          border-radius: var(--card-radius);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card-decoration {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%, 0 25%);
+          opacity: 0.1;
+          background-image: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.2) 100%);
+          transition: opacity 0.3s ease;
+        }
+        .benefit-card:hover {
+          transform: translateY(-5px);
+        }
+        .benefit-card:hover .card-decoration {
+          opacity: 0.15;
+        }
+        .benefit-card-0 .card-content { background: linear-gradient(135deg, #31243C, #251D3A); }
+        .benefit-card-1 .card-content { background: linear-gradient(135deg, #2C3E50, #34495E); }
+        .benefit-card-2 .card-content { background: linear-gradient(135deg, #414345, #232526); }
+        .benefit-card-3 .card-content { background: linear-gradient(135deg, #243B4A, #1F2F3C); }
+        .benefit-card-4 .card-content { background: linear-gradient(135deg, #3B3251, #34294F); }
+        .benefit-card-5 .card-content { background: linear-gradient(135deg, #2B344B, #232B3E); }
+      `}</style>
     </Section>
   );
 };
