@@ -34,28 +34,22 @@ const Hero = () => {
             </span>
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-          Unlock new career opportunities with Prime Coding's expert resume review. Upgrade your professional profile with personalized feedback and strategic advice. Transform your resume and step confidently into your future.
+            Unlock new career opportunities with Prime Coding's expert resume review. Upgrade your professional profile with personalized feedback and strategic advice. Transform your resume and step confidently into your future.
           </p>
-          <Button white>
-            <a href="#features">
-              GET STARTED
-            </a>
+          <Button white href="#features">
+            GET STARTED
           </Button>
-
-
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative bg-n-8 rounded-[1rem]">
               <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
-
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
-              <img
-                src={robot}
-                className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
-                alt="Prime Coding"
-              />
-
+                <img
+                  src={robot}
+                  className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
+                  alt="Prime Coding"
+                />
                 <ScrollParallax isAbsolutelyPositioned>
                   <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
                     {heroIcons.map((icon, index) => (
@@ -65,7 +59,6 @@ const Hero = () => {
                     ))}
                   </ul>
                 </ScrollParallax>
-
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
@@ -74,7 +67,6 @@ const Hero = () => {
                 </ScrollParallax>
               </div>
             </div>
-
             <Gradient />
           </div>
           <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
@@ -86,13 +78,9 @@ const Hero = () => {
               alt="hero"
             />
           </div>
-
           <BackgroundCircles />
         </div>
-
-       
       </div>
-
       <BottomLine />
     </Section>
   );
