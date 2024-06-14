@@ -6,9 +6,11 @@ import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 import Notification from "./Notification";
+import { useMediaQuery } from 'react-responsive';
 
 const Hero = () => {
   const parallaxRef = useRef(null);
+  const isDesktop = useMediaQuery({ minWidth: 1280 }); // Adjust the breakpoint as needed
 
   return (
     <Section
@@ -60,10 +62,17 @@ const Hero = () => {
                   </ul>
                 </ScrollParallax>
                 <ScrollParallax isAbsolutelyPositioned>
-                  <Notification
-                    className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
-                    title="Mentored Many"
-                  />
+                  {isDesktop ? (
+                    <Notification
+                      className="absolute -right-[5.5rem] bottom-[11rem] w-[18rem]"
+                      title="Mentored Many"
+                    />
+                  ) : (
+                    <Notification
+                      className="absolute bottom-[2rem] left-[50%] translate-x-[-50%] w-[18rem]"
+                      title="Mentored Many"
+                    />
+                  )}
                 </ScrollParallax>
               </div>
             </div>
