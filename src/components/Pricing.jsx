@@ -6,12 +6,8 @@ import { LeftLine, RightLine } from "./design/Pricing";
 const Pricing = () => {
   return (
     <Section className="overflow-hidden" id="pricing">
-      <div className="container relative z-2 max-w-[95%]">
-        <Heading
-          tag="Get started with PrimeCoding"
-          title="One Payment, Endless Opportunities"
-        />
-
+      <div className="container relative z-2">
+        <Heading tag="Get started with PrimeCoding" title="One Payment, Endless Opportunities" />
         <div className="relative">
           <PricingList />
           <LeftLine />
