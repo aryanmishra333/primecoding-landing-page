@@ -22,6 +22,13 @@ import {
   twitter,
 } from "../assets";
 
+import card1 from '../assets/benefits/card-1.svg';
+import card2 from '../assets/benefits/card-2.svg';
+import card3 from '../assets/benefits/card-3.svg';
+import card4 from '../assets/benefits/card-4.svg';
+import card5 from '../assets/benefits/card-5.svg';
+import card6 from '../assets/benefits/card-6.svg';
+
 export const navigation = [
   {
     id: "0",
@@ -108,7 +115,7 @@ export const benefits = [
     id: "0",
     title: "Expertly Crafted Questions",
     text: "We meticulously curate questions tailored to help you excel, mimicking real-world scenarios.",
-    backgroundUrl: "./src/assets/benefits/card-1.svg",
+    backgroundUrl: card1, // Updated to use imported path
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
@@ -116,7 +123,7 @@ export const benefits = [
     id: "1",
     title: "Session Types to Suit Your Needs",
     text: "Choose from a variety of session types, including HR, Managerial, Behavioral, Technical, and Resume Review.",
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    backgroundUrl: card2, // Updated to use imported path
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
     light: true,
@@ -125,7 +132,7 @@ export const benefits = [
     id: "2",
     title: "Flexible Booking Options",
     text: "Book single or multiple sessions according to your preferences and schedule.",
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    backgroundUrl: card3, // Updated to use imported path
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
@@ -133,7 +140,7 @@ export const benefits = [
     id: "3",
     title: "Personalized Guidance",
     text: "Receive personalized guidance and feedback to enhance your resume and interview performance.",
-    backgroundUrl: "./src/assets/benefits/card-4.svg",
+    backgroundUrl: card4, // Ensure you have this SVG imported similarly
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
     light: true,
@@ -142,7 +149,7 @@ export const benefits = [
     id: "4",
     title: "Comprehensive Support",
     text: "Benefit from comprehensive support across technical, HR, and resume review domains.",
-    backgroundUrl: "./src/assets/benefits/card-5.svg",
+    backgroundUrl: card5, // Updated to use imported path
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
@@ -150,7 +157,7 @@ export const benefits = [
     id: "5",
     title: "Continuous Improvement",
     text: "Our commitment to excellence drives us to continuously improve and refine our services.",
-    backgroundUrl: "./src/assets/benefits/card-6.svg",
+    backgroundUrl: card6, // Updated to use imported path
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
   },

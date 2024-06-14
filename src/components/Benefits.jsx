@@ -4,6 +4,22 @@ import Section from "./Section";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
 
+// Import SVGs directly
+import card1 from '../assets/benefits/card-1.svg';
+import card2 from '../assets/benefits/card-2.svg';
+import card3 from '../assets/benefits/card-3.svg';
+import card5 from '../assets/benefits/card-5.svg';
+import card6 from '../assets/benefits/card-6.svg';
+
+// Map of imported SVGs (assuming you have 6 cards, adjust as needed)
+const cardImages = {
+  'card-1.svg': card1,
+  'card-2.svg': card2,
+  'card-3.svg': card3,
+  'card-5.svg': card5,
+  'card-6.svg': card6,
+};
+
 const Benefits = () => {
   return (
     <Section id="features">
@@ -18,7 +34,7 @@ const Benefits = () => {
             <div
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
               style={{
-                backgroundImage: `url(${item.backgroundUrl})`,
+                backgroundImage: `url(${cardImages[item.backgroundUrl] || item.backgroundUrl})`,
               }}
               key={item.id}
             >
@@ -43,7 +59,7 @@ const Benefits = () => {
                 <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
                   {item.imageUrl && (
                     <img
-                      src={item.imageUrl}
+                      src={cardImages[item.imageUrl] || item.imageUrl}
                       width={380}
                       height={362}
                       alt={item.title}

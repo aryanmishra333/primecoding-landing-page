@@ -16,7 +16,6 @@ const App = () => {
         <Pricing />
         <Footer />
       </div>
-
       <ButtonGradient />
     </>
   );
