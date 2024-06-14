@@ -44,7 +44,7 @@ const Benefits = () => {
                 <div className="flex items-center mt-auto">
                   
                   <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
-                    At Prime Coding
+                    At PrimeCoding
                   </p>
                   
                 </div>
