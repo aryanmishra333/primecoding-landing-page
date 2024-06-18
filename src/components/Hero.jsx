@@ -36,10 +36,10 @@ const Hero = () => {
             </span>
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-          Ignite Your Career with Expert Mentorship
-Blazing Paths to HR, Tech, and Resume Mastery
-Personalized Sessions, Unbeatable Value
-Your Success Story Starts Here, Join Today!
+          Ignite Your Career with Expert Mentorship <br />
+          Blazing Paths to HR, Tech, and Resume Mastery
+          Personalized Sessions, Unbeatable Value <br />
+          Your Success Story Starts Here, Join Today!
           </p>
           <Button white href="#features">
             GET STARTED
