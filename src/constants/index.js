@@ -48,6 +48,7 @@ export const pricing = [
     description: "Receive detailed feedback and recommendations to enhance your resume.",
     price: "69",  
     features: [
+      "⏱️ Quick 10-15 minute expert review session",
       "Expert evaluation of your resume's content and structure",
       "Personalized feedback to improve its effectiveness",
       "Insights to make your resume stand out to employers",
@@ -55,65 +56,41 @@ export const pricing = [
   },
   {
     id: "1",
-    title: "HR/Managerial/Behavioral",
-    description: "Prepare for HR, managerial, and behavioral interview questions.",
-    price: "99",
-    features: [
-      "Guidance on handling common HR and managerial queries",
-      "Behavioral interview preparation and techniques",
-      "Strategies to showcase your skills and experience effectively",
-    ],
-  },
-  {
-    id: "2",
-    title: "Technical + Resume Based Questions",
-    description: "Combine technical and resume-based questions for a comprehensive session.",
-    price: "199",
-    features: [
-      "Technical question practice tailored to your field",
-      "Resume review with technical insights and feedback",
-      "Integration of technical expertise into resume optimization",
-    ],
-  },
-  {
-    id: "3",
     title: "Technical + HR + Resume Review (Ninja)",
     description: "Complete preparation package for Technical, HR, and resume reviews aimed at Ninja roles at TCS.",
     price: "249",
     features: [
+      "⏱️ Comprehensive 60-minute preparation session",
       "In-depth technical interview practice specific to TCS Ninja roles",
-      "HR interview strategies to ace managerial and behavioral questions",
       "Resume enhancement to align with TCS Ninja job requirements",
       "Best Mock interview to build confidence and reduce anxiety",
     ],
   },
   {
-    id: "4",
+    id: "2",
     title: "Technical + HR + Resume Review (Digital)",
     description: "All-in-one session designed for Digital roles at TCS, focusing on technical, HR, and resume improvements.",
     price: "299",
     features: [
+      "⏱️ Intensive 60-minute all-in-one preparation session",
       "Extensive technical interview preparation for TCS Digital roles",
-      "HR and behavioral question handling techniques",
       "Resume optimization to highlight your fit for TCS Digital positions",
       "Feedback on digital skills and projects relevant to TCS",
     ],
   },
   {
-    id: "5",
+    id: "3",
     title: "Technical + HR + Resume Review (Prime)",
     description: "Premium preparation package for Technical, HR, and resume reviews aimed at Prime roles at TCS.",
     price: "349",
     features: [
+      "⏱️ Premium 60-minute coaching and review session",
       "Advanced technical interview preparation for TCS Prime roles",
-      "Comprehensive HR interview guidance to navigate complex",
-      "Premium resume review to emphasize your suitability for",
-      "One-on-one coaching sessions with our experts Aditya and Yash",
+      "Comprehensive HR interview guidance and best practices",  
+      "One-on-one mock interview session with our experts",
     ],
   },
 ];
-
-
 
 
 export const benefits = [
