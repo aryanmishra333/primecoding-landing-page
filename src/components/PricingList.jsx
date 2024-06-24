@@ -20,9 +20,9 @@ const PricingList = () => {
                     : item.id === "1"
                     ? "#4d96ff"
                     : item.id === "2"
-                    ? "#6b5bff"
+                    ? "#ff4dff"
                     : item.id === "3"
-                    ? "#ff9f43"
+                    ? "#00d084"
                     : item.id === "4"
                     ? "#00d084"
                     : "#ff4dff",
