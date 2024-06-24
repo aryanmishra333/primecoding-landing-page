@@ -48,7 +48,7 @@ export const pricing = [
     description: "Receive detailed feedback and recommendations to enhance your resume.",
     price: "69",  
     features: [
-      "Expert evaluation of your resume by our experts",
+      "Expert evaluation of your resume's content and structure",
       "Personalized feedback to improve its effectiveness",
       "Insights to make your resume stand out to employers",
     ],
