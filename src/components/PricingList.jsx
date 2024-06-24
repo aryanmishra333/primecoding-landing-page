@@ -23,7 +23,9 @@ const PricingList = () => {
                     ? "#6b5bff"
                     : item.id === "3"
                     ? "#ff9f43"
-                    : "#000000",
+                    : item.id === "4"
+                    ? "#00d084"
+                    : "#ff4dff",
               }}
             >
               {item.id === "1" ? (

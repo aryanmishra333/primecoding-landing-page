@@ -66,9 +66,9 @@ export const pricing = [
   },
   {
     id: "2",
-    title: "Technical + Resume",
+    title: "Technical + Resume Based Questions",
     description: "Combine technical and resume-based questions for a comprehensive session.",
-    price: "149",
+    price: "199",
     features: [
       "Technical question practice tailored to your field",
       "Resume review with technical insights and feedback",
@@ -77,16 +77,40 @@ export const pricing = [
   },
   {
     id: "3",
-    title: "Technical + HR + Resume Combo",
-    description: "Get a complete package with technical, HR, and resume review sessions.",
-    price: "199",
+    title: "Technical + HR + Resume Review (Ninja)",
+    description: "Complete preparation package for Technical, HR, and resume reviews aimed at Ninja roles at TCS.",
+    price: "249",
     features: [
-      "Comprehensive preparation for technical and HR interviews",
-      "Expert evaluation and enhancement of your resume",
-      "Integration of HR insights into resume optimization",
+      "In-depth technical interview practice specific to TCS Ninja roles",
+      "HR interview strategies to ace managerial and behavioral questions",
+      "Resume enhancement to align with TCS Ninja job requirements",
+      "Mock interviews to build confidence and reduce anxiety",
+    ],
+  },
+  {
+    id: "4",
+    title: "Technical + HR + Resume Review (Digital)",
+    description: "All-in-one session designed for Digital roles at TCS, focusing on technical, HR, and resume improvements.",
+    price: "299",
+    features: [
+      "Extensive technical interview preparation for TCS Digital roles",
+      "HR and behavioral question handling techniques",
+      "Feedback on digital skills and projects relevant to TCS",
+    ],
+  },
+  {
+    id: "5",
+    title: "Technical + HR + Resume Review (Prime)",
+    description: "Premium preparation package for Technical, HR, and resume reviews aimed at Prime roles at TCS.",
+    price: "349",
+    features: [
+      "Advanced technical interview preparation for TCS Prime roles",
+      "Comprehensive HR interview guidance to navigate complex queries",
+      "Premium resume review to emphasize your suitability for TCS Prime positions",
     ],
   },
 ];
+
 
 
 export const benefits = [
