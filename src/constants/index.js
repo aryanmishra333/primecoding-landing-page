@@ -44,7 +44,7 @@ export const notificationImages = [notification4, notification3, notification2];
 export const pricing = [
   {
     id: "0",
-    title: "Resume Review",
+    title: "Resume Review with expert feedback",
     description: "Receive detailed feedback and recommendations to enhance your resume.",
     price: "69",  
     features: [
