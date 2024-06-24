@@ -95,6 +95,7 @@ export const pricing = [
     features: [
       "Extensive technical interview preparation for TCS Digital roles",
       "HR and behavioral question handling techniques",
+      "Resume optimization to highlight your fit for TCS Digital positions",
       "Feedback on digital skills and projects relevant to TCS",
     ],
   },
@@ -107,9 +108,11 @@ export const pricing = [
       "Advanced technical interview preparation for TCS Prime roles",
       "Comprehensive HR interview guidance to navigate complex queries",
       "Premium resume review to emphasize your suitability for TCS Prime positions",
+      "One-on-one coaching sessions with industry experts",
     ],
   },
 ];
+
 
 
 
