@@ -38,8 +38,8 @@ const PricingList = () => {
                 item.title
               )}
             </h4>
-            <p className="body-2 mb-8 text-n-1/50">{item.description}</p>
-            <div className="flex items-center mb-8">
+            <p className="body-2 mb-4 text-n-1/50">{item.description}</p>
+            <div className={`flex items-center ${item.price ? 'my-4' : 'mb-0'}`}>
               {item.price && (
                 <>
                   <div className="h3">₹</div>

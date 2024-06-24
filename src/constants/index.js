@@ -46,9 +46,9 @@ export const pricing = [
     id: "0",
     title: "Resume Review",
     description: "Receive detailed feedback and recommendations to enhance your resume.",
-    price: "69",
+    price: "69",  
     features: [
-      "Expert evaluation of your resume",
+      "Expert evaluation of your resume FDSFSD",
       "Personalized feedback to improve its effectiveness",
       "Insights to make your resume stand out to employers",
     ],
@@ -108,7 +108,7 @@ export const pricing = [
       "Advanced technical interview preparation for TCS Prime roles",
       "Comprehensive HR interview guidance to navigate complex",
       "Premium resume review to emphasize your suitability for",
-      "One-on-one coaching sessions with",
+      "One-on-one coaching sessions with our experts Aditya and Yash",
     ],
   },
 ];
