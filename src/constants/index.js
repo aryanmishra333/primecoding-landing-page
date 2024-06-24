@@ -84,7 +84,7 @@ export const pricing = [
       "In-depth technical interview practice specific to TCS Ninja roles",
       "HR interview strategies to ace managerial and behavioral questions",
       "Resume enhancement to align with TCS Ninja job requirements",
-      "Mock interviews to build confidence and reduce anxiety",
+      "Best Mock interview to build confidence and reduce anxiety",
     ],
   },
   {
@@ -106,9 +106,9 @@ export const pricing = [
     price: "349",
     features: [
       "Advanced technical interview preparation for TCS Prime roles",
-      "Comprehensive HR interview guidance to navigate complex queries",
-      "Premium resume review to emphasize your suitability for TCS Prime positions",
-      "One-on-one coaching sessions with industry experts",
+      "Comprehensive HR interview guidance to navigate complex",
+      "Premium resume review to emphasize your suitability for",
+      "One-on-one coaching sessions with",
     ],
   },
 ];
