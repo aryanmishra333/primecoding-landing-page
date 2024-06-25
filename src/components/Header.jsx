@@ -6,7 +6,7 @@ import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { useState} from "react";
-import Popup from "./Popup"; // Adjust the import path as necessary
+import Popup from "./Popup";
 
 const Header = () => {
   const pathname = useLocation();
