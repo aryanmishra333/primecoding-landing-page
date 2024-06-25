@@ -34,13 +34,19 @@ const Benefits = () => {
 
       <style jsx>{`
         .benefit-card {
-          --card-radius: 2rem;
+          --card-radius: 1.5rem;
           border-radius: var(--card-radius);
           transition: transform 0.3s ease, box-shadow 0.3s ease;
+          overflow: hidden;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
         }
         .card-content {
           border-radius: var(--card-radius);
+          padding: 2rem;
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(10px);
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          transition: background 0.3s ease, transform 0.3s ease;
         }
         .card-decoration {
           position: absolute;
@@ -54,17 +60,44 @@ const Benefits = () => {
           transition: opacity 0.3s ease;
         }
         .benefit-card:hover {
-          transform: translateY(-5px);
+          transform: translateY(-10px);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
         }
         .benefit-card:hover .card-decoration {
-          opacity: 0.15;
+          opacity: 0.2;
         }
-        .benefit-card-0 .card-content { background: linear-gradient(135deg, #31243C, #251D3A); }
-        .benefit-card-1 .card-content { background: linear-gradient(135deg, #2C3E50, #34495E); }
-        .benefit-card-2 .card-content { background: linear-gradient(135deg, #414345, #232526); }
-        .benefit-card-3 .card-content { background: linear-gradient(135deg, #243B4A, #1F2F3C); }
-        .benefit-card-4 .card-content { background: linear-gradient(135deg, #3B3251, #34294F); }
-        .benefit-card-5 .card-content { background: linear-gradient(135deg, #2B344B, #232B3E); }
+        .benefit-card-0 .card-content {
+          background: linear-gradient(135deg, #31243C, #251D3A);
+        }
+        .benefit-card-1 .card-content {
+          background: linear-gradient(135deg, #2C3E50, #34495E);
+        }
+        .benefit-card-2 .card-content {
+          background: linear-gradient(135deg, #414345, #232526);
+        }
+        .benefit-card-3 .card-content {
+          background: linear-gradient(135deg, #243B4A, #1F2F3C);
+        }
+        .benefit-card-4 .card-content {
+          background: linear-gradient(135deg, #3B3251, #34294F);
+        }
+        .benefit-card-5 .card-content {
+          background: linear-gradient(135deg, #2B344B, #232B3E);
+        }
+        h5 {
+          font-size: 1.5rem;
+          color: #ffffff;
+        }
+        .body-2 {
+          font-size: 1rem;
+          color: #b0b0b0;
+        }
+        .text-n-1 {
+          color: #ffffff;
+        }
+        .text-n-3 {
+          color: #d1d1d1;
+        }
       `}</style>
     </Section>
   );
