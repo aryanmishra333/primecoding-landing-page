@@ -29,7 +29,7 @@ const reviews = [
     name: 'Kalyani Kapadi',
     text: 'I had a mock interview with aditya sir and yash sir today ,It was eye opener session and they told me about where should I work on and it was very helpfull session.thank you sir for your great feedback. ',
     color: 'border-color-3 text-color-3',
-    daysAgo: 3,
+    daysAgo: 2,
   },
   {
     name: 'Adesh Kulkarni',
@@ -40,13 +40,13 @@ const reviews = [
       </>
     ),
     color: 'border-color-4 text-color-4',
-    daysAgo: 5,
+    daysAgo: 3,
   },
   {
     name: 'Krish Krishna',
     text: 'I just completed a 1:1 mock interview with Aditya and Yash sir. I can say that this was the best interview I have attended so far. Before this interview, I thought I was well-versed in the technologies mentioned on my resume. However, the interview revealed areas where I need to improve to stay competitive with other candidates. I now understand where I am lacking in perfection and will move forward with the feedback received. Thank you so much',
     color: 'border-color-5 text-color-5',
-    daysAgo: 4,
+    daysAgo: 3,
   },
 ];
 
