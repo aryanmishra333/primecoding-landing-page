@@ -86,3 +86,18 @@
 .-rotate-360 {
   @apply rotate-[-360deg]
 }
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-slide > div {
+  width: 100%;
+}
