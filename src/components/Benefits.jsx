@@ -7,25 +7,20 @@ const Benefits = () => {
     <Section id="features">
       <div className="container relative z-2">
         <Heading
-          className="md:max-w-md lg:max-w-2xl"
-          title="Stand Out, Step Ahead with PrimeCoding"
+          className="md:max-w-md lg:max-w-2xl text-white"
+          title="Elevate Your Skills with PrimeCoding Mentorship"
         />
 
-        <div className="flex flex-wrap gap-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
           {benefits.map((item, index) => (
-            <div
-              className={`benefit-card benefit-card-${index} relative md:max-w-[24rem]`}
-              key={item.id}
-            >
-              <div className="card-content relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] bg-n-8 overflow-hidden">
-                <div className="card-decoration"></div>
-                <h5 className="h5 mb-5">{item.title}</h5>
-                <p className="body-2 mb-6 text-n-3">{item.text}</p>
-                <div className="flex items-center mt-auto">
-                  <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
-                    At PrimeCoding
-                  </p>
+            <div className={`benefit-card benefit-card-${index % 3}`} key={item.id}>
+              <div className="card-content">
+                <div className="card-header">
+                  <span className="card-icon">{"{ }"}</span>
+                  <h5 className="card-title">{item.title}</h5>
                 </div>
+                <p className="card-text">{item.text}</p>
+                <div className="card-footer">AT PRIMECODING</div>
               </div>
             </div>
           ))}
@@ -34,70 +29,71 @@ const Benefits = () => {
 
       <style jsx>{`
         .benefit-card {
-          --card-radius: 1.5rem;
-          border-radius: var(--card-radius);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          background: #1a1a1a;
+          border-radius: 12px;
           overflow: hidden;
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease;
+          position: relative;
         }
-        .card-content {
-          border-radius: var(--card-radius);
-          padding: 2rem;
-          background: rgba(255, 255, 255, 0.1);
-          backdrop-filter: blur(10px);
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-          transition: background 0.3s ease, transform 0.3s ease;
-        }
-        .card-decoration {
+        .benefit-card::before {
+          content: '';
           position: absolute;
           top: 0;
           left: 0;
           right: 0;
           bottom: 0;
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%, 0 25%);
-          opacity: 0.1;
-          background-image: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.2) 100%);
-          transition: opacity 0.3s ease;
+          border-radius: 12px;
+          padding: 2px;
+          background: linear-gradient(45deg, #ff3366, #00ff9d, #00ccff);
+          -webkit-mask: 
+             linear-gradient(#fff 0 0) content-box, 
+             linear-gradient(#fff 0 0);
+          -webkit-mask-composite: xor;
+                  mask-composite: exclude;
         }
         .benefit-card:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+          transform: translateY(-5px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
-        .benefit-card:hover .card-decoration {
-          opacity: 0.2;
+        .card-content {
+          padding: 1.5rem;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
         }
-        .benefit-card-0 .card-content {
-          background: linear-gradient(135deg, #31243C, #251D3A);
+        .card-header {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1rem;
         }
-        .benefit-card-1 .card-content {
-          background: linear-gradient(135deg, #2C3E50, #34495E);
-        }
-        .benefit-card-2 .card-content {
-          background: linear-gradient(135deg, #414345, #232526);
-        }
-        .benefit-card-3 .card-content {
-          background: linear-gradient(135deg, #243B4A, #1F2F3C);
-        }
-        .benefit-card-4 .card-content {
-          background: linear-gradient(135deg, #3B3251, #34294F);
-        }
-        .benefit-card-5 .card-content {
-          background: linear-gradient(135deg, #2B344B, #232B3E);
-        }
-        h5 {
+        .card-icon {
           font-size: 1.5rem;
-          color: #ffffff;
+          color: #00ff9d;
+          margin-right: 0.5rem;
+          font-weight: bold;
         }
-        .body-2 {
+        .card-title {
+          font-size: 1.25rem;
+          color: #ffffff;
+          font-weight: 600;
+        }
+        .card-text {
           font-size: 1rem;
           color: #b0b0b0;
+          margin-bottom: 1.5rem;
+          flex-grow: 1;
         }
-        .text-n-1 {
-          color: #ffffff;
+        .card-footer {
+          font-size: 0.75rem;
+          color: #00ff9d;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          align-self: flex-end;
         }
-        .text-n-3 {
-          color: #d1d1d1;
-        }
+        .benefit-card-0::before { background: linear-gradient(45deg, #ff3366, #00ff9d); }
+        .benefit-card-1::before { background: linear-gradient(45deg, #00ff9d, #00ccff); }
+        .benefit-card-2::before { background: linear-gradient(45deg, #00ccff, #ff3366); }
       `}</style>
     </Section>
   );

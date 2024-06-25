@@ -98,15 +98,15 @@ export const benefits = [
     id: "0",
     title: "Expertly Crafted Questions",
     text: "We meticulously curate questions tailored to help you excel, mimicking real-world scenarios.",
-    backgroundUrl: card1, // Updated to use imported path
+    backgroundUrl: card1,
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Session Types to Suit Your Needs",
+    title: "Diverse Session Types",
     text: "Choose from a variety of session types, including HR, Managerial, Behavioral, Technical, and Resume Review.",
-    backgroundUrl: card2, // Updated to use imported path
+    backgroundUrl: card2,
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
     light: true,
@@ -115,7 +115,7 @@ export const benefits = [
     id: "2",
     title: "Flexible Booking Options",
     text: "Book single or multiple sessions according to your preferences and schedule.",
-    backgroundUrl: card3, // Updated to use imported path
+    backgroundUrl: card3,
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
@@ -123,7 +123,7 @@ export const benefits = [
     id: "3",
     title: "Personalized Guidance",
     text: "Receive personalized guidance and feedback to enhance your resume and interview performance.",
-    backgroundUrl: card4, // Ensure you have this SVG imported similarly
+    backgroundUrl: card4,
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
     light: true,
@@ -132,7 +132,7 @@ export const benefits = [
     id: "4",
     title: "Comprehensive Support",
     text: "Benefit from comprehensive support across technical, HR, and resume review domains.",
-    backgroundUrl: card5, // Updated to use imported path
+    backgroundUrl: card5,
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
@@ -140,7 +140,7 @@ export const benefits = [
     id: "5",
     title: "Continuous Improvement",
     text: "Our commitment to excellence drives us to continuously improve and refine our services.",
-    backgroundUrl: card6, // Updated to use imported path
+    backgroundUrl: card6,
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
   },
