@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Section from './Section';
 
 const reviews = [
   {
@@ -129,6 +130,7 @@ const ReviewsSection = () => {
   }, []);
 
   return (
+    <Section id="reviews">
     <section className="py-20">
       <style jsx>{`
         .slick-track {
@@ -175,6 +177,7 @@ const ReviewsSection = () => {
         </div>
       </div>
     </section>
+    </Section>
   );
 };
 

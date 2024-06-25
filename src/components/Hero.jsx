@@ -41,7 +41,7 @@ const Hero = () => {
           Personalized Sessions, Unbeatable Value <br />
           Your Success Story Starts Here, Join Today!
           </p>
-          <Button white href="#features">
+          <Button white href="#offerings">
             GET STARTED
           </Button>
         </div>
