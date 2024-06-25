@@ -77,7 +77,7 @@ const ReviewsSection = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     pauseOnHover: true,
     pauseOnFocus: true,
     responsive: [
@@ -163,7 +163,7 @@ const ReviewsSection = () => {
         }
       `}</style>
       <div className="container">
-        <h2 className="h2 mb-14 text-center text-n-1">What Our Customers Say</h2>
+        <h2 className="h2 mb-14 text-center text-n-1">What Our Candidates Say</h2>
         <div className="mx-auto">
           <Slider ref={sliderRef} {...settings}>
             {reviews.map((review, index) => (
