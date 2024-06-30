@@ -6,9 +6,16 @@ import Section from './Section';
 
 const reviews = [
   {
-    name: 'Gow',
-    text: 'Thank you Aditya sir for the mock coding session and your valuable feedback! It really helped me understand my strengths and areas to improve, especially in how to answer questions in interview. I will work on your suggestions',
-    color: 'border-color-1 text-color-1',
+    name: 'Rakesh Pratap singh',
+    text: (
+      <>
+    Hi Aditya Sir,<br />
+Just wanted to let you know that my Prime Role interview in MP went exceptionally well! There were three panelists, and I felt really confident thanks to your challenging mock sessions. The technical questions were from OS, DBMS, and OOPS, and your most frequently asked video was a lifesaver. For the coding part, they asked me the optimal approach for my TCS NQT shift 2nd question and some additional questions on stack and singly linked lists. I remember you specifically asked me the NQT question during practice and explained the optimal approach, which helped me a lot. Thanks so much to you and Prime Coding for all the support and guidance! <br />
+Thanks again!
+    </>
+    )
+,
+    color: 'border-color-5 text-color-1',
     daysAgo: 1,
   },
   {
@@ -27,10 +34,16 @@ const reviews = [
     daysAgo: 2,
   },
   {
+    name: 'Pradum Singh',
+    text: 'Just had a mock session with Aditya bhaiya and Yash bhaiya , it was a great session thanks for your valuable time for me, it was really good to know about all those weak points where I am lacking .Will surely work upon those. Thank you Aditya Mishra and Yash sir',
+    color: 'border-color-3 text-color-3',
+    daysAgo: 1,
+  },
+  {
     name: 'Kalyani Kapadi',
     text: 'I had a mock interview with aditya sir and yash sir today ,It was eye opener session and they told me about where should I work on and it was very helpfull session.thank you sir for your great feedback. ',
     color: 'border-color-3 text-color-3',
-    daysAgo: 2,
+    daysAgo: 3,
   },
   {
     name: 'Adesh Kulkarni',
