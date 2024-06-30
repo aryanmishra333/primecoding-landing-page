@@ -1,4 +1,4 @@
-import brainwave from "./brainwave.svg";
+import primecoding from "./primecoding.svg";
 import check from "./check.svg";
 import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
@@ -22,7 +22,7 @@ import loading from "./loading.png";
 import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
-import robot from "./hero/robot.jpg";
+import ADIPIC from "./hero/ADIPIC.jpg";
 import heroBackground from "./hero/hero-background.jpg";
 
 import curve1 from "./collaboration/curve-1.svg";
@@ -76,7 +76,7 @@ import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
 export {
-  brainwave,
+  primecoding,
   check,
   check2,
   loading1,
@@ -99,7 +99,7 @@ export {
   loading,
   background,
   curve,
-  robot,
+  ADIPIC,
   heroBackground,
   curve1,
   curve2,

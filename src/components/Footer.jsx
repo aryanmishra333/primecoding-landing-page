@@ -11,7 +11,6 @@ const Footer = () => {
         </p>
         
         <ul className="flex gap-5 flex-wrap">
-        <p className="text-n-4 font-semibold pb-2">Our Socials:</p>
           {socials.map((item) => (
             <a
               key={item.id}
