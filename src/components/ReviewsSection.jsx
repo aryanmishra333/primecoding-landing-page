@@ -15,7 +15,7 @@ Thanks again!
     </>
     )
 ,
-    color: 'border-color-5 text-color-1',
+    color: 'border-color-8 text-color-8',
     daysAgo: 1,
   },
   {
@@ -36,7 +36,7 @@ Thanks again!
   {
     name: 'Pradum Singh',
     text: 'Just had a mock session with Aditya bhaiya and Yash bhaiya , it was a great session thanks for your valuable time for me, it was really good to know about all those weak points where I am lacking .Will surely work upon those. Thank you Aditya Mishra and Yash sir',
-    color: 'border-color-3 text-color-3',
+    color: 'border-color-6 text-color-6',
     daysAgo: 1,
   },
   {
