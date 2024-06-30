@@ -10,7 +10,7 @@ import { useMediaQuery } from 'react-responsive';
 
 const Hero = () => {
   const parallaxRef = useRef(null);
-  const isDesktop = useMediaQuery({ minWidth: 1280 }); // Adjust the breakpoint as needed
+  const isDesktop = useMediaQuery({ minWidth: 1280 });
 
   return (
     <Section

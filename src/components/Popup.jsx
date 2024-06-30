@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 const Popup = ({ message, onClose }) => {
   useEffect(() => {
-    const timer = setTimeout(onClose, 3000); // Hide after 3 seconds
+    const timer = setTimeout(onClose, 3000);
     return () => clearTimeout(timer);
   }, [onClose]);
 
